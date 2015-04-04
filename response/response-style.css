@@ -1,0 +1,73 @@
+body {
+	background: url(../bg/six.jpg) fixed;
+	background-size: cover;
+}
+#book {
+	width: 900px;
+	height: 667px;
+	background: url(img/books.png);
+	overflow: hidden;
+
+}
+#input, #output {
+	display: inline-block;
+	width: 448px;
+	height: 630px;
+	float: left;
+	
+}
+
+#output {
+	width: 400px;
+	margin-top: 50px;
+	margin-right: 50px;
+	float: right;
+	height: 530px;
+	overflow-y: scroll;
+
+}
+#output::-webkit-scrollbar {
+    display: none;
+}
+
+b {
+	color: #853300;
+}
+h2 {
+	color: #853300;
+	margin-left: 80px;
+	margin-top: 60px;
+}
+
+form {
+	margin-top: 300px;
+	margin-left: 130px;
+}
+#content {
+	color: black;
+}
+#angularout {
+	margin-left: 40px;
+	margin-top: 60px;
+	width: 300px;
+}
+input[type="text"] {
+	width: 180px;
+}
+input[type="submit"] {
+	background-color: transparent;
+	border: none;
+}
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+textarea {
+	width: 180px;
+}
+.ng-invalid.ng-dirty {
+	border-color: #fa787e;
+}
+
+.ng-valid.ng-dirty {
+	border-color: #78fa89;
+}

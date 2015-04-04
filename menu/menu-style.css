@@ -1,0 +1,46 @@
+body {
+	background: url(../bg/sex.jpg) fixed;
+	background-size: cover;
+}
+
+
+.menu-item  {
+	margin-top: 90px;
+	margin-left: 15px;
+	display: inline-block;
+}
+
+
+.menu-item p {
+	text-align: center;
+	color: #853300;
+	font-weight: bold;
+}
+#content {
+	height: 662px;
+}
+
+
+.foto {
+	float: right;
+	width: 280px;
+	height: 210px;
+	overflow: hidden;	
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
+	position: relative;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.foto::after {
+	content: '';
+	width: 280px;
+	height: 210px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: -webkit-radial-gradient(transparent, rgba(0,0,0,0.7));
+}
+.foto:hover::after {
+	opacity: 0;
+}

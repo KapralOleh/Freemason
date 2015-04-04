@@ -1,0 +1,44 @@
+body {
+	background: url(../../bg/sex.jpg) fixed;
+	background-size: cover;
+}
+.someImg{
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+#modalDiv{
+    width: 800px;
+    height: 530px;
+    position: fixed;
+    background-color: green;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1001;
+  }
+td {
+	font-family: Arial;
+}
+table {
+	width: 100%;
+	margin-top: 50px;
+	color: black;
+}
+h2,h3 {
+	color: #853300; 
+}
+
+.col1 {
+	width: 60%;
+}
+.col2 {
+	width: 20%;
+}
+.col3 {
+	width: 20%
+}
+.right {
+	text-align: right;
+}

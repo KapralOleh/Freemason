@@ -1,0 +1,22 @@
+body {
+	background: url(../bg/last.jpg) fixed;
+	background-size: cover;
+}
+
+#content {
+	color:black;
+}
+#content a {
+	text-decoration: none;
+	color: black;
+}
+iframe {
+	margin: 30px 170px;
+}
+span {
+	font-weight: bold;
+	color: #853300;
+}
+h3 {
+	color:#853300;
+}

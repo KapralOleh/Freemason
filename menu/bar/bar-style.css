@@ -1,0 +1,32 @@
+body {
+	background: url(../../bg/sex.jpg) fixed;
+	background-size: cover;
+}
+td {
+	font-family: Arial;
+}
+table {
+	width: 100%;
+	margin-top: 50px;
+	color: black;
+}
+.right {
+	text-align: right;
+}
+.col1 {
+	width: 60%;
+	font-size: 22px;
+	color: #853300; 
+}
+.col2 {
+	width: 20%;
+}
+.col3 {
+	width: 20%
+}
+#content p {
+	text-align: center;
+}
+h2 {
+	color: #853300; 
+}

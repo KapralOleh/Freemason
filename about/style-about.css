@@ -1,0 +1,19 @@
+body {
+	background: url(../bg/second.jpg) fixed;
+	background-size: cover;
+}
+
+h2 {
+	color: #853300;
+}
+#content {
+	color:black;
+}
+
+#content img {
+	width: 300px;
+}
+
+p.img {
+	text-align: center;
+}

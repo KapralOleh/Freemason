@@ -1,0 +1,25 @@
+body {
+	background: url(../../bg/sex.jpg) fixed;
+	background-size: cover;
+}
+h2,h3 {
+	color: #853300; 
+}
+
+table {
+	width: 100%;
+	margin-top: 50px;
+	color: black;
+}
+.right {
+	float:right;
+}
+#content p {
+	color: black;
+}
+@media screen and (max-width: 1367px) {
+	#content img {
+		width:250px; 
+		height:335px;
+	}
+}

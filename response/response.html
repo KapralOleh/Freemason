@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" > <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" > <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Книга відгуків</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="response-style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-1367px.css">
+	<link rel="shortcut icon" href="../img/logos.png" type="image/png">
+</head>
+<body ng-controller="MyController">
+	<div id="wrap">
+		<header><a href="../index.html"><img src="../img/logo.png"></a><h1>THE MOST EXPENSIVE GALICIAN RESTAURANT</h1></header>
+
+		<nav>
+			<ul class="menu">
+				<li><a href="../index.html">Новини</a></li>
+				<li><a href="../about/about.html">Про Масонів</a></li>
+				<li id="overMenu"><a id="openMenu" href="../menu/menu.html">Меню</a>
+					<ul id="slideMenu" class="submenu">
+						<li><a href="../menu/kitchen/kitchen.html">Кухня</a></li>
+						<li><a href="../menu/bar/bar.html">Бар</a></li>
+						<li><a href="../menu/vine/vine.html">Винна карта</a></li>
+					</ul>
+				</li>
+				<li><a href="../gallery/gallery.html">Галерея</a></li>
+				<li><a href="../proposition/proposition.html">Пропозиції ресторану</a></li>
+				<li><a class="active" href="response.html">Книга відгуків</a></li>
+				<li><a href="../contact/contact.html">Контакти</a></li>
+			</ul>
+		</nav>
+	
+		<section id="content">
+			<div id="book">		
+	     		<div id="input">
+	     		<h2>Книга відгуків та пропозицій</h2>
+	     		<form name="first" ng-submit="first.$valid && addMessage($event)" novalidate>
+	     			<label>Імя:<br> <input ng-model="name" type="text" required placeholder="Ваше імя"></label><br>
+	     			<label>Ваш відгук або пропозиція: <textarea ng-model="msg" required  placeholder="Type a response..."></textarea></label><br>
+	     			<input type="submit" value="Надіслати"> 
+
+	     		</form>
+	     		</div>
+
+	     		<div id="output">
+					<div id="angularout" ng-repeat="msg in messages">
+						<cite><b>By:</b> {{ msg.from }} <b>On:</b> {{msg.createdOn | date}}</cite>
+						<p>{{ msg.body }}</p>
+						<hr>
+					</div>
+	     		</div>	
+	     	</div>
+	     </section>
+		<footer>
+			<p>Найдорожча ресторація Галичини<br> пл. Ринок, 14,<br> Lviv, Ukraine, 79006</p>
+			<a href="https://www.facebook.com/NaidorozhchaRestoracijaGalychyny" target="_blank">
+				<img src="../img/facebook.png">
+			</a>
+		</footer>	
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/bigmenu.js"></script>	
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>	
+	<script type="text/javascript" src="../script/menu.js"></script>	
+</body>
+</html>
