@@ -1,17 +1,15 @@
-
-
-id = setInterval(function() {
-	var y = scrollY;
-	var e = document.getElementsByTagName('nav')[0];
-	// console.log(y)
-	if (y > 100) {
-			e.setAttribute("class", "bigMenu");
-		} else if (y < 100) {
-			e.setAttribute("class", "");
+var nav = document.getElementsByTagName('nav')[0];
+	  window.onscroll = function() {
+        // console.log(scrollY);
+        if (scrollY > 100) {
+			nav.setAttribute("class", "bigMenu");
+		} else if (scrollY < 100) {
+			nav.setAttribute("class", " ");
 		};
-},100)
-
-
+	
+      };
+    
+	
 // $(function (){
 // 	$(window).scroll(function(e){
 // 		x = window.scrollY;
