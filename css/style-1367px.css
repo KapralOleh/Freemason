@@ -31,19 +31,14 @@
     width: 400px;
     height: 300px;
    }
-   /*меню*/
+   /*сторінка меню*/
    .foto, .foto::after {
     width: 200px;
     height: 150px;
    }
     /*слайдери*/
-   .slider {
-    width: 670px;
-   }
-   .slider-wrapper {
-    height: 447px;
-   }
-   .slide {
+  
+   #slide {
     height: 447px;
     width: 670px;
    }

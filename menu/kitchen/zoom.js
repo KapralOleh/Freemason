@@ -25,7 +25,7 @@ var oldDiv = null;
  
   $('.someImg').on('click', function(e){
     var jthis = $(this);
-    var r = null;
+    
       function show(){
         modal.css({ 'top':jthis.offset().top,
                 'left':jthis.offset().left,

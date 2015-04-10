@@ -1,9 +1,10 @@
-
-
+var on = document.getElementById('openMenu'),
+	off = document.getElementById('overMenu'),
+	elem = document.getElementById('slideMenu');
+	
 	function over() {
 	  var height = 0;
-	    function frame() {
-	  	var elem = document.getElementById('slideMenu');
+	    function frame() {	  	
 	  		height +=10;  
 	  	    elem.style.height = height + 'px';
 	   	if (height == 160)  {
@@ -15,11 +16,9 @@
 
 	function out() {
 	  var height = 160;
-	    function frame() {
-	  	var elem = document.getElementById('slideMenu');
+	    function frame() {	  	
 	  		height -=10;  
-	  	    elem.style.height = height + 'px';
-	  	    
+	  	    elem.style.height = height + 'px';	  	    
 	   	if (height == 0)  
 	      clearInterval(id);
 	  }
@@ -28,9 +27,9 @@
 	
 
 
-document.getElementById('openMenu').addEventListener("mouseover",function(){ if(document.getElementById('slideMenu').style.height === "160px"){
+on.addEventListener("mouseover",function(){ if(elem.style.height === "160px"){
 	return false;
 } else {over()} })
-document.getElementById('overMenu').addEventListener("mouseleave",function(){ out() })
+off.addEventListener("mouseleave",function(){ out() })
 
 
