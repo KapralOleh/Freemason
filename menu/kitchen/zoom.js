@@ -37,8 +37,8 @@ var oldDiv = null;
         jthis.css('opacity',0);
         modal.attr({'src':jthis.attr('src')})
         modal.animate({'height':533,'width':800,
-                    'top':(window.innerHeight - 450) / 2,
-                    'left':(window.innerWidth - 800) / 2},{
+                    'top':(document.documentElement.clientHeight / 2)-250,
+                    'left':(document.documentElement.clientWidth / 2)-400},{
             duration: 500,
             specialEasing: {
               height: 'swing',
